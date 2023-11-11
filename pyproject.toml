@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-on-aws"
+version = "1.0.0"
+description = "Guide on how to deploy django on AWS"
+authors = ["Hussaini Usman <hussainmaina27@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2.7"
+boto3 = "^1.28.84"
+django-environ = "^0.11.2"
+gunicorn = "^21.2.0"
+psycopg2-binary = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["d"], version = "^23.11.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
